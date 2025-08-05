@@ -1,445 +1,444 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de [Seu Nome] | Cibersegurança</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio de [Seu Nome] | Cibersegurança</title>
 
-    <style>
-        /* --- CONFIGURAÇÕES GLOBAIS E TEMA --- */
-        :root {
-            --bg-color: #121212; /* Fundo escuro */
-            --card-bg: #1E1E1E; /* Fundo dos cards */
-            --primary-color: #00FF7F; /* Verde "Hacker" */
-            --text-color: #E0E0E0; /* Texto principal */
-            --header-text-color: #FFFFFF; /* Texto do cabeçalho */
-            --border-color: #2e2e2e;
-        }
+<link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
+<link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+<link href="[https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto:wght@400;700&display=swap](https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Roboto:wght@400;700&display=swap)" rel="stylesheet">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+    /* --- CONFIGURAÇÕES GLOBAIS E TEMA --- */
+    :root {
+        --bg-color: #121212; /* Fundo escuro */
+        --card-bg: #1E1E1E; /* Fundo dos cards */
+        --primary-color: #3848f1; /* Azul mais claro */
+        --text-color: #E0E0E0; /* Texto principal */
+        --header-text-color: #FFFFFF; /* Texto do cabeçalho */
+        --border-color: #2e2e2e;
+        --secondary-color: #2736d1; /* Azul intermediário */
+    }
 
-        html {
-            scroll-behavior: smooth;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-        }
+    html {
+        scroll-behavior: smooth;
+    }
 
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        h1, h2, h3 {
-            font-family: 'Fira Code', monospace;
-            color: var(--header-text-color);
-            font-weight: 700;
-        }
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+    }
 
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            text-align: center;
-            color: var(--primary-color);
-            text-shadow: 0 0 5px rgba(0, 255, 127, 0.5);
-        }
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+    }
 
-        /* --- CABEÇALHO (HERO SECTION) --- */
-        .hero {
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-        }
+    h1, h2, h3 {
+        font-family: 'Fira Code', monospace;
+        color: var(--header-text-color);
+        font-weight: 700;
+    }
 
-        .hero h1 {
-            font-size: 3.5rem;
-        }
-        
-        .hero .tagline {
-            font-family: 'Fira Code', monospace;
-            font-size: 1.5rem;
-            color: var(--primary-color);
-            margin-top: 1rem;
-        }
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: var(--primary-color);
+        text-shadow: 0 0 5px rgba(56, 72, 241, 0.5);
+    }
 
-        .hero .tagline .cursor {
-            display: inline-block;
-            background-color: var(--primary-color);
-            width: 10px;
-            animation: blink 1s step-end infinite;
-        }
-        
-        @keyframes blink {
-            from, to { background-color: transparent }
-            50% { background-color: var(--primary-color); }
-        }
+    /* --- CABEÇALHO (HERO SECTION) --- */
+    .hero {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    }
 
-        /* --- NAVEGAÇÃO --- */
-        nav {
-            background-color: rgba(30, 30, 30, 0.8);
-            backdrop-filter: blur(10px);
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            width: 100%;
-            border-bottom: 1px solid var(--border-color);
-        }
+    .hero h1 {
+        font-size: 3.5rem;
+    }
 
-        nav .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-        }
+    .hero .tagline {
+        font-family: 'Fira Code', monospace;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        margin-top: 1rem;
+    }
 
-        nav a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-family: 'Fira Code', monospace;
-            margin: 0 20px;
-            font-size: 1.1rem;
-            transition: color 0.3s, text-shadow 0.3s;
-        }
+    .hero .tagline .cursor {
+        display: inline-block;
+        background-color: var(--primary-color);
+        width: 10px;
+        animation: blink 1s step-end infinite;
+    }
 
-        nav a:hover {
-            color: var(--primary-color);
-            text-shadow: 0 0 5px rgba(0, 255, 127, 0.5);
-        }
+    @keyframes blink {
+        from, to { background-color: transparent }
+        50% { background-color: var(--primary-color); }
+    }
 
-        /* --- SEÇÕES --- */
-        section {
-            padding: 60px 0;
-        }
-        
-        #sobre {
-            background-color: var(--card-bg);
-        }
-        
-        .sobre-content {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-        
-        .sobre-content img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 3px solid var(--primary-color);
-            object-fit: cover;
-        }
+    /* --- NAVEGAÇÃO --- */
+    nav {
+        background-color: rgba(30, 30, 30, 0.8);
+        backdrop-filter: blur(10px);
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        border-bottom: 1px solid var(--border-color);
+    }
 
-        /* --- PROJETOS --- */
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 1.5rem;
-        }
+    nav .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
 
-        .project-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-            display: flex;
-            flex-direction: column;
-        }
+    nav a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-family: 'Fira Code', monospace;
+        margin: 0 20px;
+        font-size: 1.1rem;
+        transition: color 0.3s, text-shadow 0.3s;
+    }
 
-        .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 255, 127, 0.3);
-        }
-        
-        .project-card h3 {
-            color: var(--primary-color);
-            margin-bottom: 0.5rem;
-        }
-        
-        .project-card p {
-            flex-grow: 1;
-        }
+    nav a:hover {
+        color: var(--primary-color);
+        text-shadow: 0 0 5px rgba(56, 72, 241, 0.5);
+    }
 
-        .project-card .tags {
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-        }
+    /* --- SEÇÕES --- */
+    section {
+        padding: 60px 0;
+    }
 
-        .project-card .tag {
-            display: inline-block;
-            background-color: #333;
-            color: var(--primary-color);
-            padding: 0.3rem 0.6rem;
-            border-radius: 4px;
-            font-family: 'Fira Code', monospace;
-            font-size: 0.8rem;
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
+    #sobre {
+        background-color: var(--card-bg);
+    }
 
-        .project-card .links a {
-            color: var(--header-text-color);
-            text-decoration: none;
-            font-weight: bold;
-            margin-right: 1.5rem;
-            transition: color 0.3s;
-        }
-        
-        .project-card .links a:hover {
-            color: var(--primary-color);
-        }
+    .sobre-content {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
 
-        /* --- HABILIDADES --- */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            text-align: center;
-        }
-        
-        .skill-category {
-            background-color: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-        }
-        
-        .skill-category h3 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-        
-        .skill-category ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .skill-category li {
-            font-family: 'Fira Code', monospace;
-            margin-bottom: 0.5rem;
-        }
-        
-        /* --- CONTATO --- */
-        #contato {
-            text-align: center;
-        }
-        
-        .contact-links a {
-            display: inline-block;
-            margin: 1rem;
-            padding: 0.8rem 1.5rem;
-            border: 2px solid var(--primary-color);
-            color: var(--primary-color);
-            text-decoration: none;
-            font-family: 'Fira Code', monospace;
-            font-size: 1.1rem;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        
-        .contact-links a:hover {
-            background-color: var(--primary-color);
-            color: var(--bg-color);
-        }
+    .sobre-content img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 3px solid var(--primary-color);
+        object-fit: cover;
+    }
 
-        /* --- FOOTER --- */
-        footer {
-            text-align: center;
-            padding: 2rem 0;
-            border-top: 1px solid var(--border-color);
-            font-family: 'Fira Code', monospace;
-        }
+    /* --- PROJETOS --- */
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 1.5rem;
+    }
 
-    </style>
+    .project-card {
+        background-color: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 1.5rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 15px rgba(56, 72, 241, 0.3);
+    }
+
+    .project-card h3 {
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+        flex-grow: 1;
+    }
+
+    .project-card .tags {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .project-card .tag {
+        display: inline-block;
+        background-color: #333;
+        color: var(--primary-color);
+        padding: 0.3rem 0.6rem;
+        border-radius: 4px;
+        font-family: 'Fira Code', monospace;
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-card .links a {
+        color: var(--header-text-color);
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 1.5rem;
+        transition: color 0.3s;
+    }
+
+    .project-card .links a:hover {
+        color: var(--primary-color);
+    }
+
+    /* --- HABILIDADES --- */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .skill-category {
+        background-color: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+    }
+
+    .skill-category h3 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    .skill-category ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .skill-category li {
+        font-family: 'Fira Code', monospace;
+        margin-bottom: 0.5rem;
+    }
+
+    /* --- CONTATO --- */
+    #contato {
+        text-align: center;
+    }
+
+    .contact-links a {
+        display: inline-block;
+        margin: 1rem;
+        padding: 0.8rem 1.5rem;
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+        text-decoration: none;
+        font-family: 'Fira Code', monospace;
+        font-size: 1.1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .contact-links a:hover {
+        background-color: var(--primary-color);
+        color: var(--bg-color);
+    }
+
+    /* --- FOOTER --- */
+    footer {
+        text-align: center;
+        padding: 2rem 0;
+        border-top: 1px solid var(--border-color);
+        font-family: 'Fira Code', monospace;
+    }
+
+</style>
 </head>
 <body>
 
-    <header class="hero">
-        <h1>[Seu Nome Completo]</h1>
-        <p class="tagline">
-            <span id="typing-effect"></span>
-            <span class="cursor">&nbsp;</span>
-        </p>
-    </header>
+<header class="hero">
+    <h1>Thyago [Seu Sobrenome]</h1>
+    <p class="tagline">
+        <span id="typing-effect"></span>
+        <span class="cursor">&nbsp;</span>
+    </p>
+</header>
 
-    <nav>
-        <div class="container">
-            <a href="#sobre">SOBRE</a>
-            <a href="#projetos">PROJETOS</a>
-            <a href="#habilidades">HABILIDADES</a>
-            <a href="#contato">CONTATO</a>
+<nav>
+    <div class="container">
+        <a href="#sobre">SOBRE</a>
+        <a href="#projetos">PROJETOS</a>
+        <a href="#habilidades">HABILIDADES</a>
+        <a href="#contato">CONTATO</a>
+    </div>
+</nav>
+
+<main>
+    <section id="sobre">
+        <div class="container sobre-content">
+            <img src="[https://github.com/identicon/jasonlong.png](https://github.com/identicon/jasonlong.png)" alt="Sua Foto">
+            <div>
+                <h2>> SOBRE MIM</h2>
+                <p>
+                    Desenvolvedor de software em transição de carreira para a área de Cibersegurança. Apaixonado por tecnologia e pela resolução de problemas complexos, busco aplicar minha experiência em lógica de programação e desenvolvimento para criar ambientes digitais mais seguros.
+                    <br><br>
+                    Tenho focado meus estudos em segurança de redes, análise de vulnerabilidades e práticas de desenvolvimento seguro (DevSecOps). Meu objetivo é atuar como Analista de Segurança, contribuindo para a proteção de dados e infraestruturas críticas.
+                </p>
+            </div>
         </div>
-    </nav>
+    </section>
 
-    <main>
-        <section id="sobre">
-            <div class="container sobre-content">
-                <img src="https://github.com/identicon/jasonlong.png" alt="Sua Foto">
-                <div>
-                    <h2>> SOBRE MIM</h2>
+    <section id="projetos">
+        <div class="container">
+            <h2>> PROJETOS_</h2>
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <h3>Analisador de Vulnerabilidades Web</h3>
                     <p>
-                        Desenvolvedor de software em transição de carreira para a área de Cibersegurança. Apaixonado por tecnologia e pela resolução de problemas complexos, busco aplicar minha experiência em lógica de programação e desenvolvimento para criar ambientes digitais mais seguros.
-                        <br><br>
-                        Tenho focado meus estudos em segurança de redes, análise de vulnerabilidades e práticas de desenvolvimento seguro (DevSecOps). Meu objetivo é atuar como Analista de Segurança, contribuindo para a proteção de dados e infraestruturas críticas.
+                        Ferramenta em Python que escaneia sites em busca de vulnerabilidades comuns do OWASP Top 10, como a ausência de headers de segurança (CSP, HSTS) e a exposição de arquivos sensíveis.
                     </p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Requests</span>
+                        <span class="tag">OWASP</span>
+                        <span class="tag">Segurança Web</span>
+                    </div>
+                    <div class="links">
+                        <a href="#" target="_blank" style="color: var(--primary-color);">Ver Código</a>
+                        </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="projetos">
-            <div class="container">
-                <h2>> PROJETOS_</h2>
-                <div class="project-grid">
-                    
-                    <div class="project-card">
-                        <h3>Analisador de Vulnerabilidades Web</h3>
-                        <p>
-                            Ferramenta em Python que escaneia sites em busca de vulnerabilidades comuns do OWASP Top 10, como a ausência de headers de segurança (CSP, HSTS) e a exposição de arquivos sensíveis.
-                        </p>
-                        <div class="tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Requests</span>
-                            <span class="tag">OWASP</span>
-                            <span class="tag">Segurança Web</span>
-                        </div>
-                        <div class="links">
-                            <a href="#" target="_blank">Ver Código</a>
-                            </div>
+                <div class="project-card">
+                    <h3>Laboratório de Análise de Malware</h3>
+                    <p>
+                        Setup de um "home lab" com máquinas virtuais (REMnux, Windows Flare-VM) para realizar análise estática e dinâmica de amostras de malware em um ambiente seguro e isolado. As descobertas foram documentadas em relatórios detalhados.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">VirtualBox</span>
+                        <span class="tag">REMnux</span>
+                        <span class="tag">Análise de Malware</span>
+                        <span class="tag">Wireshark</span>
                     </div>
-                    
-                    <div class="project-card">
-                        <h3>Laboratório de Análise de Malware</h3>
-                        <p>
-                            Setup de um "home lab" com máquinas virtuais (REMnux, Windows Flare-VM) para realizar análise estática e dinâmica de amostras de malware em um ambiente seguro e isolado. As descobertas foram documentadas em relatórios detalhados.
-                        </p>
-                        <div class="tags">
-                            <span class="tag">VirtualBox</span>
-                            <span class="tag">REMnux</span>
-                            <span class="tag">Análise de Malware</span>
-                            <span class="tag">Wireshark</span>
-                        </div>
-                        <div class="links">
-                            <a href="#" target="_blank">Ler Relatórios</a>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h3>Ferramenta de Criptografia de Arquivos</h3>
-                        <p>
-                            Aplicação de linha de comando desenvolvida em Go que utiliza o algoritmo AES-256 para criptografar e descriptografar arquivos locais, garantindo a confidencialidade dos dados.
-                        </p>
-                        <div class="tags">
-                            <span class="tag">Go (Golang)</span>
-                            <span class="tag">Criptografia</span>
-                            <span class="tag">AES-256</span>
-                            <span class="tag">CLI</span>
-                        </div>
-                        <div class="links">
-                            <a href="#" target="_blank">Ver Código</a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <section id="habilidades">
-            <div class="container">
-                <h2>> HABILIDADES_</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Linguagens</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>Bash Scripting</li>
-                            <li>JavaScript</li>
-                            <li>Go</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Ferramentas de Segurança</h3>
-                        <ul>
-                            <li>Nmap</li>
-                            <li>Wireshark</li>
-                            <li>Metasploit</li>
-                            <li>Burp Suite</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Conceitos</h3>
-                        <ul>
-                            <li>Redes (TCP/IP)</li>
-                            <li>OWASP Top 10</li>
-                            <li>Análise de Vulnerabilidades</li>
-                            <li>Criptografia</li>
-                        </ul>
+                    <div class="links">
+                        <a href="#" target="_blank" style="color: var(--primary-color);">Ler Relatórios</a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="contato">
-            <div class="container">
-                <h2>> CONTATO_</h2>
-                <p>Estou disponível para novas oportunidades e colaborações. <br>Vamos nos conectar!</p>
-                <div class="contact-links">
-                    <a href="mailto:seu-email@dominio.com">E-mail</a>
-                    <a href="https://linkedin.com/in/seu-usuario" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/seu-usuario" target="_blank">GitHub</a>
+                <div class="project-card">
+                    <h3>Ferramenta de Criptografia de Arquivos</h3>
+                    <p>
+                        Aplicação de linha de comando desenvolvida em Go que utiliza o algoritmo AES-256 para criptografar e descriptografar arquivos locais, garantindo a confidencialidade dos dados.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Go (Golang)</span>
+                        <span class="tag">Criptografia</span>
+                        <span class="tag">AES-256</span>
+                        <span class="tag">CLI</span>
+                    </div>
+                    <div class="links">
+                        <a href="#" target="_blank" style="color: var(--primary-color);">Ver Código</a>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
 
-    <footer>
-        <div class="container">
-            &copy; 2025 - [Seu Nome Completo]
+            </div>
         </div>
-    </footer>
+    </section>
 
-    <script>
-        // --- SCRIPT DO EFEITO DE DIGITAÇÃO ---
-        const texts = ["Desenvolvedor de Software", "Entusiasta de Cibersegurança", "Futuro Analista de Segurança"];
-        let count = 0;
-        let index = 0;
-        let currentText = "";
-        let letter = "";
+    <section id="habilidades">
+        <div class="container">
+            <h2>> HABILIDADES_</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Linguagens</h3>
+                    <ul>
+                        <li style="color: var(--secondary-color);">Python</li>
+                        <li style="color: var(--secondary-color);">Bash Scripting</li>
+                        <li style="color: var(--secondary-color);">JavaScript</li>
+                        <li style="color: var(--secondary-color);">Go</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Ferramentas de Segurança</h3>
+                    <ul>
+                        <li style="color: var(--secondary-color);">Nmap</li>
+                        <li style="color: var(--secondary-color);">Wireshark</li>
+                        <li style="color: var(--secondary-color);">Metasploit</li>
+                        <li style="color: var(--secondary-color);">Burp Suite</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Conceitos</h3>
+                    <ul>
+                        <li style="color: var(--secondary-color);">Redes (TCP/IP)</li>
+                        <li style="color: var(--secondary-color);">OWASP Top 10</li>
+                        <li style="color: var(--secondary-color);">Análise de Vulnerabilidades</li>
+                        <li style="color: var(--secondary-color);">Criptografia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        (function type() {
-            if (count === texts.length) {
-                count = 0;
-            }
-            currentText = texts[count];
-            letter = currentText.slice(0, ++index);
+    <section id="contato">
+        <div class="container">
+            <h2>> CONTATO_</h2>
+            <p>Estou disponível para novas oportunidades e colaborações. <br>Vamos nos conectar!</p>
+            <div class="contact-links">
+                <a href="mailto:seu-email@dominio.com" style="border-color: var(--primary-color); color: var(--primary-color);">E-mail</a>
+                <a href="[https://linkedin.com/in/seu-usuario](https://linkedin.com/in/seu-usuario)" target="_blank" style="border-color: var(--primary-color); color: var(--primary-color);">LinkedIn</a>
+                <a href="[https://github.com/seu-usuario](https://github.com/seu-usuario)" target="_blank" style="border-color: var(--primary-color); color: var(--primary-color);">GitHub</a>
+            </div>
+        </div>
+    </section>
+</main>
 
-            document.getElementById('typing-effect').textContent = letter;
-            if (letter.length === currentText.length) {
-                count++;
-                index = 0;
-                setTimeout(type, 3000); // Pausa antes de começar a próxima frase
-            } else {
-                setTimeout(type, 100); // Velocidade da digitação
-            }
-        }());
-    </script>
+<footer>
+    <div class="container">
+        &copy; 2025 - Thyago [Seu Sobrenome]
+    </div>
+</footer>
 
-</body>
-</html>
+<script>
+    // --- SCRIPT DO EFEITO DE DIGITAÇÃO ---
+    const texts = ["Desenvolvedor de Software", "Entusiasta de Cibersegurança", "Futuro Analista de Segurança"];
+    let count = 0;
+    let index = 0;
+    let currentText = "";
+    let letter = "";
+
+    (function type() {
+        if (count === texts.length) {
+            count = 0;
+        }
+        currentText = textsplus-string(count);
+        letter = currentText.slice(0, ++index);
+
+        document.getElementById('typing-effect').textContent = letter;
+        if (letter.length === currentText.length) {
+            count++;
+            index = 0;
+            setTimeout(type, 3000); // Pausa antes de começar a próxima frase
+        } else {
+            setTimeout(type, 100); // Velocidade da digitação
+        }
+    }());
+</script>
