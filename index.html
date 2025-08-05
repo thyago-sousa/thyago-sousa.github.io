@@ -268,6 +268,70 @@
             font-family: 'Fira Code', monospace;
         }
 
+        /* --- AJUSTES PARA RESPONSIVIDADE --- */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem; /* Reduz o tamanho dos títulos de seção */
+            }
+
+            .hero {
+                height: auto; /* Altura automática para se ajustar ao conteúdo */
+                padding: 80px 20px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem; /* Tamanho de fonte menor para o nome */
+            }
+
+            .hero .tagline {
+                font-size: 1.1rem; /* Tamanho menor para o subtítulo */
+            }
+
+            nav .container {
+                flex-direction: column; /* Empilha os links da navegação */
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 5px 0; /* Ajusta a margem para layout vertical */
+            }
+
+            .sobre-content {
+                flex-direction: column; /* Empilha a imagem sobre o texto */
+                text-align: center;
+            }
+
+            .sobre-content img {
+                margin-bottom: 1.5rem; /* Adiciona espaço entre a imagem e o texto */
+            }
+
+            .sobre-content h2 {
+                 text-align: center; /* Garante que o H2 da seção Sobre fique centralizado */
+            }
+            
+            .sobre-content p {
+                 text-align: left; /* Mantém o parágrafo alinhado à esquerda para melhor leitura */
+            }
+
+            .contact-links a {
+                display: block; /* Faz cada link ocupar uma linha */
+                margin: 1rem auto; /* Centraliza os botões */
+                width: 80%;
+                max-width: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-grid {
+                 /* Em telas muito pequenas, força uma coluna única e ajusta o minmax */
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+
+            .container {
+                padding: 15px; /* Reduz o padding lateral em telas muito pequenas */
+            }
+        }
+
     </style>
 </head>
 <body>
